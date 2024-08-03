@@ -1,0 +1,145 @@
+{
+    "FSE-CLIENTS": {
+        "Client 4": {
+            "FirstName": "Testing The Scalability Of My Insfrastructure",
+            "LastName": "Does It Work?",
+            "Age": "Look at the rabbit message received",
+            "Objective": "Scalability",
+            "TimeHorizon": "Next 1 month"
+        },
+        "The Double": {
+            "FirstName": "This Is A double - Testing The Scalability Of My Insfrastructure",
+            "LastName": "Does The Double Work?",
+            "Age": "I love it when it works",
+            "Objective": "Scalability Engine For Databases Double Testing",
+            "TimeHorizon": "SHould Work Rn, Ksho its authentication, and once i am don, i update the skills on my cv, ad also look into deployment and containerization etc"
+        },
+        "SIngle - Testing": {
+            "FirstName": "SIngle - Testing",
+            "LastName": "SIngle - Testing",
+            "Age": "SIngle - Testing",
+            "Objective": "SIngle - Testing",
+            "TimeHorizon": "SIngle - Testing"
+        },
+        "Load Handling-Load Balancing-Replications-Make it Scalable": {
+            "FirstName": "Load Handling-Load Balancing-Replications-Make it Scalable",
+            "LastName": "Load Handling-Load Balancing-Replications-Make it Scalable",
+            "Age": "Load Handling-Load Balancing-Replications-Make it Scalable",
+            "Objective": "Load Handling-Load Balancing-Replications-Make it Scalable",
+            "TimeHorizon": "Load Handling-Load Balancing-Replications-Make it Scalable"
+        },
+        "ls": {
+            "FirstName": "DIstributed Systems",
+            "LastName": "Automated building and deployment",
+            "Age": "Git version Control",
+            "Objective": "Cloud Engineering",
+            "TimeHorizon": "DevOps/Agile"
+        },
+        "id": {
+            "FirstName": "Message Increases load ",
+            "LastName": "Message Increases load ",
+            "Age": "Message Increases load ",
+            "Objective": "Message Increases load ",
+            "TimeHorizon": "Message Increases load "
+        },
+        "Kratos": {
+            "FirstName": "Kratos",
+            "LastName": "Kratos",
+            "Age": "Kratos",
+            "Objective": "Kratos",
+            "TimeHorizon": "Kratos"
+        },
+        "Zeus": {
+            "FirstName": "Zeus",
+            "LastName": "Zeus",
+            "Age": "Zeus",
+            "Objective": "Zeus",
+            "TimeHorizon": "Zeus"
+        },
+        "Video-Games": {
+            "FirstName": "Video-Games",
+            "LastName": "Video-Games",
+            "Age": "Video-Games",
+            "Objective": "Video-Games",
+            "TimeHorizon": "Video-Games"
+        },
+        "No-Message": {
+            "FirstName": "No-Message",
+            "LastName": "No-Message",
+            "Age": "No-Message",
+            "Objective": "No-Message",
+            "TimeHorizon": "No-Message"
+        },
+        "microservice-test": {
+            "FirstName": "microservice-test",
+            "LastName": "microservice-test",
+            "Age": "microservice-test",
+            "Objective": "microservice-test",
+            "TimeHorizon": "microservice-test"
+        },
+        "test": {
+            "FirstName": "test",
+            "LastName": "test",
+            "Age": "test",
+            "Objective": "test",
+            "TimeHorizon": "test"
+        },
+        "new-test": {
+            "FirstName": "new-test",
+            "LastName": "new-test",
+            "Age": "new-test",
+            "Objective": "new-test",
+            "TimeHorizon": "new-test"
+        }
+    },
+    "INVENTORY": {
+        "Inventory-Testing-Double-Message": {
+            "Name": "Inventory-Testing-Double-Message",
+            "UsualQuantity": "Inventory-Testing-Double-Message",
+            "ProcuringPrice": "Inventory-Testing-Double-Message",
+            "RetailPrice": "Inventory-Testing-Double-Message",
+            "AvailableQuantities": "Inventory-Testing-Double-Message",
+            "ExpectedShipment": "Inventory-Testing-Double-Message"
+        },
+        "Mincro-Service-Read-Wrote-Message-Websocket-Testing": {
+            "Name": "Mincro-Service-Read-Wrote-Message-Websocket-Testing",
+            "UsualQuantity": "Mincro-Service-Read-Wrote-Message-Websocket-Testing",
+            "ProcuringPrice": "Mincro-Service-Read-Wrote-Message-Websocket-Testing",
+            "RetailPrice": "Mincro-Service-Read-Wrote-Message-Websocket-Testing",
+            "AvailableQuantities": "Mincro-Service-Read-Wrote-Message-Websocket-Testing",
+            "ExpectedShipment": "Mincro-Service-Read-Wrote-Message-Websocket-Testing"
+        },
+        "Micro-Service-Read-Wrote-Message-Websocket-Testing": {
+            "Name": "Micro-Service-Read-Wrote-Message-Websocket-Testing",
+            "UsualQuantity": "Micro-Service-Read-Wrote-Message-Websocket-Testing",
+            "ProcuringPrice": "Micro-Service-Read-Wrote-Message-Websocket-Testing",
+            "RetailPrice": "Micro-Service-Read-Wrote-Message-Websocket-Testing",
+            "AvailableQuantities": "Micro-Service-Read-Wrote-Message-Websocket-Testing",
+            "ExpectedShipment": "Micro-Service-Read-Wrote-Message-Websocket-Testing"
+        },
+        "Paralyse-websockets": {
+            "Name": "Paralyse-websockets",
+            "UsualQuantity": "Paralyse-websockets",
+            "ProcuringPrice": "Paralyse-websockets",
+            "RetailPrice": "Paralyse-websockets",
+            "AvailableQuantities": "Paralyse-websockets",
+            "ExpectedShipment": "Paralyse-websockets"
+        },
+        "Paralyse-test?": {
+            "Name": "Paralyse-test?`",
+            "UsualQuantity": "Paralyse-test?",
+            "ProcuringPrice": "Paralyse-test?",
+            "RetailPrice": "Paralyse-test?",
+            "AvailableQuantities": "Paralyse-test?",
+            "ExpectedShipment": "Paralyse-test?"
+        },
+        "inventory-micro-services-test": {
+            "Name": "inventory-micro-services-test",
+            "UsualQuantity": "inventory-micro-services-test",
+            "ProcuringPrice": "inventory-micro-services-test",
+            "RetailPrice": "inventory-micro-services-test",
+            "AvailableQuantities": "inventory-micro-services-test",
+            "ExpectedShipment": "inventory-micro-services-test"
+        }
+    }
+}

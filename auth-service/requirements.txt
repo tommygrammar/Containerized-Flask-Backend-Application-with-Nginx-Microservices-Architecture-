@@ -1,0 +1,7 @@
+flask-cors
+flask
+requests
+firebase-admin
+
+
+

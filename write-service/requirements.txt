@@ -1,0 +1,6 @@
+flask-cors
+flask
+flask_socketio
+requests
+
+
