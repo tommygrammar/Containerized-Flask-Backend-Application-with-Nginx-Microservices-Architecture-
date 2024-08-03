@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-cred = credentials.Certificate("/home/tommy/Desktop/ohali-db/Docker-Flask-App/auth-service/security_key.json")
+cred = credentials.Certificate("/app/security_key.json")
 firebase_admin.initialize_app(cred)
 
 connection_established = False
