@@ -29,7 +29,7 @@ def authenticate():
     email = data.get('email')
     password = data.get('password')
 
-    sign_in_url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDpxKOWUxontyYOUGRgh9zZ1juyOE0hQoQ"
+    sign_in_url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[your firebase app api key]"
 
     payload = {
         "email": email,
