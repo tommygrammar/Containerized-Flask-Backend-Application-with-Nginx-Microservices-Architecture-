@@ -1,0 +1,138 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - my_network
+
+  auth-service:
+    image: auth
+    container_name: auth
+    ports:
+      - "5000:5000"
+    networks:
+      - my_network
+
+  websocket-service:
+    image: websocket
+    container_name: websocket
+    ports:
+      - "5003:5003"
+    networks:
+      - my_network
+
+  message-service:
+    image: message
+    container_name: message
+    ports:
+      - "5004:5004"
+    networks:
+      - my_network
+    depends_on:
+      - rabbitmq
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+
+  read-service:
+    image: read
+    container_name: read
+    ports:
+      - "5001:5001"
+    networks:
+      - my_network
+    depends_on:
+      - auth-service
+    volumes:
+      - shared-data:/app
+
+  write-service:
+    image: write
+    container_name: write
+    ports:
+      - "5002:5002"
+    networks:
+      - my_network
+    depends_on:
+      - auth-service
+    volumes:
+      - shared-data:/app
+
+  nginx1:
+    image: nginx
+    container_name: nginx1
+    volumes:
+      - ./nginx/nginx1.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+    depends_on:
+      - auth-service
+      - websocket-service
+      - message-service
+      - read-service
+      - write-service
+      - rabbitmq
+
+  nginx2:
+    image: nginx
+    container_name: nginx2
+    volumes:
+      - ./nginx/nginx2.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "81:80"
+    networks:
+      - my_network
+    depends_on:
+      - auth-service
+      - websocket-service
+      - message-service
+      - read-service
+      - write-service
+      - rabbitmq
+
+  nginx3:
+    image: nginx
+    container_name: nginx3
+    volumes:
+      - ./nginx/nginx3.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "82:80"
+    networks:
+      - my_network
+    depends_on:
+      - auth-service
+      - websocket-service
+      - message-service
+      - read-service
+      - write-service
+      - rabbitmq
+
+
+  load-balancer:
+    image: nginx
+    container_name: load-balancer
+    volumes:
+      - ./nginx/nginx-load-balancer.conf:/etc/nginx/nginx.conf
+    ports:
+      - "8080:80"
+    networks:
+      - my_network
+    depends_on:
+      - nginx1
+      - nginx2
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  shared-data:
