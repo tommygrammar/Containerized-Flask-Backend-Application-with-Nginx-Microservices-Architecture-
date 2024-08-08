@@ -1,0 +1,14 @@
+flask-cors
+flask
+redis
+
+
+
+
+
+
+
+
+
+
+
